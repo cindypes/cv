@@ -1,0 +1,113 @@
+<!DOCTYPE html> <!-- html5, tells the browser to render file as html 5 document-->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- meta elements give associated data, tells the browser that all the text inside our webpage is encoded using utf-8 (standard) encoding system; mojibake shows when weird symbols don't match the encoding "language"; main boiler plate code-->
+  <title>Cindy's Personal Site</title>
+</head>
+
+<table cellspacing="20">
+  <tr>
+    <td>
+      <img src="https://media-exp1.licdn.com/dms/image/C5603AQEpXE055mp1Ag/profile-displayphoto-shrink_200_200/0/1516956852122?e=1635379200&v=beta&t=ezFjVnP0CCnt5kZNFldI1eAqWySPSqioOv1W-035eBM" alt="cindy profile picture 1">
+      <!--img creates a pic, src - sources pic from a link, alt shows text if it can't bring the pic in-->
+    </td>
+    <td>
+      <img src="ct.jpg" alt="cindy profile picture" width="200" height="250">
+      <!--can also save the image in the folder and include a path or actual file name-->
+    </td>
+    <td>
+      <h1>Cindy Tseng</h1>
+      <p><em>KA Pricing and Innovation Senior Manager at <strong><a href="https://www.agoda.com/">agoda</a></strong></em></p> <!-- <p> is a paragraph tag, creates a new line and everything inside this tag gets grouped together into a paragraph -->
+      <!--<em> italicizes and emphasizes text and <strong> bolds and emphasizes text </strong>-->
+      <p>I am living the dream, working in Bangkok, Thailand. Now I'm learning Javascript so I can be wherever I want to be </p>
+    </td>
+  </tr>
+</table>
+
+<body>
+  <hr>
+  <h3>Education</h3>
+  <ul>
+    <!--"unordered list", or bullet list; li is "list item"-->
+    <li>University of Maryland, College Park
+      <ul>
+        <!--include another "unordered list", to create a sub-bullet-->
+        <li> <em>Bachelors in Marketing and Finance</em>
+      </ul>
+    <li>University of Hong Kong
+      <ul>
+        <li><em>Study Abroad</em></li>
+      </ul>
+    </li>
+  </ul>
+  <hr>
+  <h3>Work Experience</h3>
+  <!--use table to create a table, thead to make headers and tbody to make body of table; tr makes a new row; td=table data/cell, so there are no columns-->
+  <table cellspacing="10">
+    <thead>
+      <tr>
+        <th>Years</th>
+        <th>Company</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2018-Present</td>
+        <td>agoda</td>
+      </tr>
+      <tr>
+        <td>2015-2018</td>
+        <td>Accenture</td>
+      </tr>
+    </tbody>
+    <tfoot>
+    </tfoot>
+  </table>
+  <hr>
+  <h3>Skills</h3>
+  <!--below is how to create a nested table, it can get messy, so it's not recommeneded to do-->
+  <table cellspacing ="10">
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td>Eating</td>
+            <td>⭐⭐⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Sleeping</td>
+            <td>⭐⭐⭐⭐</td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table>
+          <tr>
+            <td>SQL</td>
+            <td>⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Tableau</td>
+            <td>⭐⭐</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <!--end of nested table-->
+  <hr>
+  <h3>Hobbies</h3>
+  <ol>
+    <!-- ordered list, or numbered list-->
+    <li>playing</li>
+    <li>eating</li>
+    <li>sleeping</li>
+  </ol>
+  <hr>
+  <h3><a href="contact.html">Contact Me</a></h3>
+  <!-- <a is anchor tag which basically creates a link for you to click to and takes you to external/internal sites-->
+</body>
+
+</html>

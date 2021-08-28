@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>contact me</title>
+</head>
+
+<body>
+  <h1>Cindy's Contact Info</h1>
+  <ul>
+    <li>tsengcindy08@gmail.com</li>
+  </ul>
+<!--cleaner form version
+action is where the "submit" directs your form to (so changed default, "index.html" to "mailto:[email linked to computer]"and method=post will take
+what's written in the form and post it to wherever it's being directed; enctype = encoding type and dictates how it's displayed-->
+  <form action="mailto:tsengcindy08@gmail.com" method="post" enctype="text/plain">
+    <label>Your Name:</label>
+    <input type="text" name="Your Name" value=""><br> <!-- name value will give the inputs a specific name when posted-->
+    <label>Your Email:</label>
+    <input type="email" name="Your Email" value=""><br>
+    <label>Your Message:</label><br>
+    <textarea name="Your Message" rows="15" cols="80"></textarea>
+    <!--rows = height, cols = width-->
+    <input type="submit" name="">
+    <br><br>
+    <hr size="3">
+    <br><br>
+  </form>
+  <!--below we create a form where people can fill out the form on the site
+and we would gather data; however, this is just building the structure, we need
+css and javascript to complete the functionality
+- for a form to work it also must have label and
+input elements (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+below are a bunch of examples (look up top for a cleaner version)-->
+  <form class="" action="index.html" method="post">
+    <label>Your Name:</label>
+    <input type="text" name="" value="">
+    <input type="submit" name="">
+    <br>
+    <br>
+    <label>Password</label>
+    <input type="password" name="" value="">
+    <br>
+    <br>
+    <input type="color" name="" value="">
+    <input type="file" name="" value="">
+    <br>
+    <input type="date" name="" value="">
+    <br>
+    <input type="radio" name="" value="">
+    <br>
+    <input type="range" name="" value="">
+  </form>
+</body>
+
+</html>
