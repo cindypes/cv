@@ -3,34 +3,40 @@
 
 <head>
   <meta charset="utf-8">
-  <!-- meta elements give associated data, tells the browser that all the text inside our webpage is encoded using utf-8 (standard) encoding system; mojibake shows when weird symbols don't match the encoding "language"; main boiler plate code-->
+  <!-- meta elements give associated data, tells the browser that all the text inside our webpage is encoded using utf-8 (standard) encoding system; mojibake (weird symbols) shows when weird symbols don't match the encoding "language"; main boiler plate code-->
+  <!--utf-8 ensures max compatability bc it covers most languages -->
   <title>Cindy's Personal Site</title>
+
 </head>
 
 <table cellspacing="20">
   <tr>
     <td>
-      <img src="https://media-exp1.licdn.com/dms/image/C5603AQEpXE055mp1Ag/profile-displayphoto-shrink_200_200/0/1516956852122?e=1635379200&v=beta&t=ezFjVnP0CCnt5kZNFldI1eAqWySPSqioOv1W-035eBM" alt="cindy profile picture 1">
+      <img src="https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.len.game%2Fwp-content%2Fuploads%2F2021%2F06%2FYoshi.jpg&imgrefurl=https%3A%2F%2Flen.game%2F%25E0%25B8%259E%25E0%25B8%25A5%25E0%25B8%25B4%25E0%25B8%2581%25E0%25B9%2582%25E0%25B8%259C-%25E0%25B8%258A%25E0%25B8%25B2%25E0%25B8%25A7%25E0%25B8%258D%25E0%25B8%25B5%25E0%25B9%2588%25E0%25B8%259B%25E0%25B8%25B8%25E0%25B9%2588%25E0%25B8%2599%25E0%25B9%2580%25E0%25B8%25A5%25E0%25B8%25B7%25E0%25B8%25AD%25E0%25B8%2581-yoshi%2F&tbnid=BBc6riXM_SDnVM&vet=12ahUKEwij0NzNkeT3AhUT73MBHb3tBrIQMygIegUIARD4AQ..i&docid=WURtyy3dhVudCM&w=356&h=227&q=yoshi&ved=2ahUKEwij0NzNkeT3AhUT73MBHb3tBrIQMygIegUIARD4AQ" alt="yoshi">
       <!--img creates a pic, src - sources pic from a link, alt shows text if it can't bring the pic in-->
     </td>
     <td>
       <img src="ct.jpg" alt="cindy profile picture" width="200" height="250">
-      <!--can also save the image in the folder and include a path or actual file name-->
+      <!--can also save the image in the folder (src) and include a path or actual file name-->
     </td>
     <td>
       <h1>Cindy Tseng</h1>
-      <p><em>KA Pricing and Innovation Senior Manager at <strong><a href="https://www.agoda.com/">agoda</a></strong></em></p> <!-- <p> is a paragraph tag, creates a new line and everything inside this tag gets grouped together into a paragraph -->
-      <!--<em> italicizes and emphasizes text and <strong> bolds and emphasizes text </strong>-->
+      <p><em>KA Pricing and Innovation Senior Manager at <strong><a href="https://www.agoda.com/">agoda</a></strong></em></p>
+      <!-- <p> is a paragraph tag, creates a new line and everything inside this tag gets grouped together into a paragraph -->
+      <!--<em> italicizes and emphasizes text and <strong> bolds and emphasizes text </strong>; better than using i tag or use strong vs b tag (i and b is just style)-->
+      <!-- above agoda link is bolded on the site -->
       <p>I am living the dream, working in Bangkok, Thailand. Now I'm learning Javascript so I can be wherever I want to be </p>
+      <p><a href="https://en.wikipedia.org/wiki/Bangkok">Bangkok</a></p>
+      <!-- <a = =anchor tag (html element); href (html attribute) is set to equal the "link destination" (put link in quotes), and Link text (text between ></a>) will be text that shows up on the site-->
     </td>
   </tr>
 </table>
 
 <body>
-  <hr>
+  <hr> <!-- hr is horizantal rule, which is a line across your site -->
   <h3>Education</h3>
   <ul>
-    <!--"unordered list", or bullet list; li is "list item"-->
+    <!--ul = "unordered list", or bullet list; li is "list item"-->
     <li>University of Maryland, College Park
       <ul>
         <!--include another "unordered list", to create a sub-bullet-->
@@ -45,7 +51,7 @@
   <hr>
   <h3>Work Experience</h3>
   <!--use table to create a table, thead to make headers and tbody to make body of table; tr makes a new row; td=table data/cell, so there are no columns-->
-  <table cellspacing="10">
+  <table cellspacing="10"> <!-- cellspacing is spacing between table elements-->
     <thead>
       <tr>
         <th>Years</th>
@@ -68,7 +74,7 @@
   <hr>
   <h3>Skills</h3>
   <!--below is how to create a nested table, it can get messy, so it's not recommeneded to do-->
-  <table cellspacing ="10">
+  <table cellspacing="10">
     <tr>
       <td>
         <table>
@@ -108,6 +114,7 @@
   <hr>
   <h3><a href="contact.html">Contact Me</a></h3>
   <!-- <a is anchor tag which basically creates a link for you to click to and takes you to external/internal sites-->
+  <!-- href will be what the link text will point to-->
 </body>
 
 </html>
